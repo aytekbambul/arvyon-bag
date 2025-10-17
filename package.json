@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  },
+  "name": "monogram-shop",
+  "version": "1.0.0",
+  
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "monogram": "npx @tailwindcss/cli -i input.css -o output.css --watch"
+  },
+  "keywords": [],
+
+  "license": "ISC",
+  "type": "commonjs"
+}
