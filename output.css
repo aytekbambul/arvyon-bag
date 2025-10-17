@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-lime-50: oklch(98.6% 0.031 120.757);
     --color-lime-100: oklch(96.7% 0.067 122.328);
     --color-lime-300: oklch(89.7% 0.196 126.665);
@@ -248,9 +249,6 @@
       max-width: 96rem;
     }
   }
-  .mx-2 {
-    margin-inline: calc(var(--spacing) * 2);
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -419,6 +417,9 @@
   .border-black {
     border-color: var(--color-black);
   }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
+  }
   .bg-emerald-900 {
     background-color: var(--color-emerald-900);
   }
@@ -437,8 +438,8 @@
   .bg-stone-200 {
     background-color: var(--color-stone-200);
   }
-  .bg-\[url\(\/images\/arvyon-w\.png\)\] {
-    background-image: url(/images/arvyon-w.png);
+  .bg-\[url\(images\/arvyonw\.png\)\] {
+    background-image: url(images/arvyonw.png);
   }
   .bg-cover {
     background-size: cover;
@@ -640,11 +641,6 @@
   .focus\:border-lime-300 {
     &:focus {
       border-color: var(--color-lime-300);
-    }
-  }
-  .max-lg\:mx-2 {
-    @media (width < 64rem) {
-      margin-inline: calc(var(--spacing) * 2);
     }
   }
   .max-lg\:ml-2 {
